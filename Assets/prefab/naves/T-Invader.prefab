@@ -1,0 +1,168 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 33: {fileID: 3300000}
+  - 23: {fileID: 2300000}
+  - 114: {fileID: 11400002}
+  - 65: {fileID: 6500000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: T-Invader
+  m_TagString: Enemigo
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400012}
+  m_Layer: 0
+  m_Name: pistola
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: .321019739, y: -.321019739, z: .630036771, w: .630036771}
+  m_LocalPosition: {x: 523.37677, y: -9.62935543, z: 2.84274793}
+  m_LocalScale: {x: .301589012, y: .301589012, z: .301589012}
+  m_Children:
+  - {fileID: 400012}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &400012
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_LocalRotation: {x: -.321019739, y: .321019739, z: -.630036771, w: .630036771}
+  m_LocalPosition: {x: 5.91608906, y: 43.5881958, z: -24.1790905}
+  m_LocalScale: {x: 3.31577063, y: 3.31577063, z: 3.31577063}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 0
+--- !u!23 &2300000
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 1ea688071fa8fc34dad8e571b70cd198, type: 2}
+  - {fileID: 2100000, guid: feabf5eca8023d14daaf0be75da48e82, type: 2}
+  - {fileID: 2100000, guid: 6d1c4ae6d2e828544a6830da0ae6f8f4, type: 2}
+  - {fileID: 2100000, guid: f690f773cd1fef448875970fa33d2980, type: 2}
+  - {fileID: 2100000, guid: 1d038f3a58d699c4aae6d3f4c431440d, type: 2}
+  - {fileID: 2100000, guid: 97ef4ee479102e54d9241f333969c500, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3300000
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Mesh: {fileID: 4300048, guid: 98ea86c2fe6a082479433deb8473708f, type: 3}
+--- !u!65 &6500000
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 56.7426605, y: 50.362484, z: 61.9627876}
+  m_Center: {x: 6.64498758, y: 2.26176882, z: -24.5000706}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8e17a0eb96c9b44e934582648b6efb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 5400000, guid: 4ea28a3f2868c3e4e9ade52f4e8bf2e7, type: 2}
+  pistola: {fileID: 400012}
+  pistola2: {fileID: 0}
+  pistola3: {fileID: 0}
+  pistola4: {fileID: 0}
+  pistola5: {fileID: 0}
+  pistola6: {fileID: 0}
+  pistola7: {fileID: 0}
+  pistola8: {fileID: 0}
+  pistola_doble: {fileID: 0}
+  pistola_triple: {fileID: 0}
+  attacktimer: 0
+  coolDown: .699999988
+  tiempo_parar_disparo: 2
+  cantidad_de_disparos_seguidos: 3
+  objecto_gameObject: {fileID: 100000}
+  velocidad_disparo: 100
+  aparecio: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2488b55bbffd24a4b91512e8303bb4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 70
+  dar_power_up: 0
+  dar_escudo: 0
+  power_up: {fileID: 5400000, guid: fdeeea41400e8d94db4b7838877fb2e5, type: 2}
+  escudo: {fileID: 0}
+  explosion: {fileID: 400004, guid: 169b10ce10f4327cb9f40f6b117ed8d7, type: 2}
+  destruir: 0
+  tiempo_extra_para_destruir: 0
+  pre_explosion: {fileID: 0}
+  gold: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
